@@ -60,7 +60,7 @@ export class AdminmomdulesService {
     const reEncryptedData = this.encrypt(updatedJsonData, combinedKey);
   
     const uploadDir = path.resolve('uploads');
-    const uploadPath = path.join(uploadDir, `${file.filename}-re-encrypted.enc`);
+    const uploadPath = path.join(uploadDir, `${file.filename}-re-encrypted.txt`);
   
     if (!fs.existsSync(uploadDir)) {
       fs.mkdirSync(uploadDir, { recursive: true });
